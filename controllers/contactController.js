@@ -2,9 +2,9 @@ const nodemailer = require('nodemailer');
 
 exports.send = function(req, res) {
 
-  const connect = "BeMo123#"; //password
-  const email = "emailfortryingstuff@gmail.com"; //email for sending the mail
-  const service_p = "Gmail";
+  const connect = process.env.PASSWORD; //password
+  const email = process.env.EMAIL; //email for sending the mail
+  const service_p = process.env.SERVICE;
 
   const smtpTransport = require('nodemailer-smtp-transport');
   // create reusable transporter object using the default SMTP transport
