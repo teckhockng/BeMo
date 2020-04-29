@@ -22,7 +22,7 @@ exports.send = function(req, res) {
     },
   }));
   console.log(req.body.email);
-  const my_email = "t.hock.ng@gmail.com";
+  const my_email = "info@bemoacademicconsulting.com"; //change this email to your email
   // setup email data with unicode symbols
   const mailOptions = {
     from: `${req.body.email}` + ' <you@your_email.com>', // sender address
