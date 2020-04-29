@@ -4,7 +4,7 @@
   "description": "BeMo website duplicate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
   "keywords": [
     "Express"
