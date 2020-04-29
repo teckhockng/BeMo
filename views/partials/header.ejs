@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="/javascripts/functions.js"></script>
+
+    <!-- Include the analytics tag here or below -->
+  </head>
+
+  <body>
+    <!-- Or include the analytics tag here -->
+      <header>
+          <nav class="navbar navbar-light bg-light">
+            <img src="../images/bemo-logo2.png" alt="BeMo Logo" width="167" height="100">
+
+            <a class="navbar-brand" href="/">Main</a>
+            <a class="navbar-brand" href="/contact">Contact</a>
+            <% if ( !authenticated ) { %>
+            <a class="navbar-brand" href="/login">Login</a>
+            <% } else { %>
+            <a class="navbar-brand" href="/logout">Logout</a>
+            <% } %>
+          </nav>
+      </header>

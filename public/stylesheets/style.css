@@ -1,0 +1,60 @@
+/* Centered text */
+.jumbotron {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+.img-container {
+  background-image: url(../images/cda-interview-guide.jpg);
+  background-size: cover;
+  background-position: 100% -150px;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+h1,h2,h3,h4,p, legend, label {
+  color: black;
+  text-align: left;
+}
+
+nav{
+  overflow: hidden;
+  width: 100%;
+  position: fixed !important;
+  z-index: 2;
+  top: 0;
+  opacity: 0.8;
+}
+
+footer{
+  background-color: blue;
+  height: 100px;
+}
+
+.fa{
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 100px;
+}
+
+.container{
+  color: white;
+  text-align: right;
+  padding-top: 20px;
+  margin: 0;
+  width: 100%
+}

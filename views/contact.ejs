@@ -1,0 +1,46 @@
+<%- include ('partials/header'); -%>
+
+<div class="jumbotron">
+  <img src="../images/contact-us.png" alt="Contact Us" width="100%" height="100%" style="">
+  <h3>BeMo Academic Consulting Inc.</h3>
+  <br/>
+  <p><a href="tel:1-855-900-2366"><u>Toll Free:</u></a> 1-855-900-BeMo (2366)</p>
+  <p><a href="mailto:info@bemoacademicconsulting.com"><u>Email:</u></a> info@bemoacademicconsulting.com</p>
+
+
+  <h4>Note: If you are having difficulties with our contact us form above, send us an email to info@bemoacademicconsulting.com (copy & paste the email address)</h4>
+
+  <section>
+    <form action="/contact" method="post">
+      <fieldset>
+        <legend>Insert details here</legend>
+
+        <div class="form-group">
+          <label for="name">Name: </label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address: </label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="john_doe@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="details">How can we help you? </label>
+          <input type="text" class="form-control" id="details" name="details" placeholder="Your questions..." required>
+        </div>
+
+      </fieldset>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-primary">Reset</button>
+      </div>
+    </form>
+  </section>
+
+</div>
+
+
+
+<%- include ('partials/footer'); -%>
