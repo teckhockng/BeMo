@@ -9,6 +9,7 @@ var logoutRouter = require('./routes/logout');
 
 var app = express();
 
+require('dotenv').config({ path: 'variables.env' });
 
 // use mongoose to connect to mongo
 var mongoose = require( 'mongoose' );
